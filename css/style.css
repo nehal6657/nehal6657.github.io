@@ -1,7 +1,11 @@
 
 /*headder area*/
 
-#nehal{
+/*===========navbar start======*/
+@import url(./font.css);
+@import url(partials/_variables.css);
+
+.header_area .main_menu .navbar .navbar-brand{
     padding: 0 2rem 0 5rem;
     
 }
@@ -12,9 +16,31 @@
 
 header{
     color:black;
-    background-color:rgb(146, 199, 47);
+    background-color: var(--pcolor);
 }
 
-.header_area .main_menu .navbar .collapse .nav-item{
-    
+.header_area .main_menu .nav-item .nav-link{
+    /* smae thing in just one line
+    font: normal 500 15px/2px var(--os);*/
+    font-family: var(--os); 
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1.7rem;
+    color: var(--tcolor);
 }
+
+.header_area .main_menu .navbar-nav .active a{
+    background: var(--gradcolor);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.header_area .main_menu .navbar-nav a:hover{
+    background: var(--gradcolor);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/*=============navbar end============*/
+
