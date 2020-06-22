@@ -3,7 +3,7 @@
 
 /*===========navbar start======*/
 @import url(./font.css);
-@import url(partials/_variables.css);
+@import url(./partials/_variables.css);
 
 .header_area .main_menu .navbar .navbar-brand{
     padding: 0 2rem 0 5rem;
