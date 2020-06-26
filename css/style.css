@@ -5,6 +5,8 @@
 @import url(./font.css);
 @import url(./partials/_variables.css);
 
+
+
 .header_area .main_menu .navbar .navbar-brand{
     padding: 0 2rem 0 5rem;
     
@@ -16,27 +18,27 @@
 
 header{
     color:black;
-    background-color: var(--pcolor);
+    background-color:  rgb(221, 25, 84);
 }
 
 .header_area .main_menu .nav-item .nav-link{
     /* smae thing in just one line
     font: normal 500 15px/2px var(--os);*/
-    font-family: var(--os); 
+    font-family: "OpenSans", cursive; 
     text-transform: uppercase;
     font-weight: 500;
     padding: 1.7rem;
-    color: var(--tcolor);
+    color: black;
 }
 
 .header_area .main_menu .navbar-nav .active a{
-    background: var(--gradcolor);
+    background:  linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(52,197,183,1) 18%, rgba(253,242,45,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 .header_area .main_menu .navbar-nav a:hover{
-    background: var(--gradcolor);
+    background:  linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(52,197,183,1) 18%, rgba(253,242,45,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -44,3 +46,32 @@ header{
 
 /*=============navbar end============*/
 
+/*banner area*/
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+    
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+       
+}
+.site-main .site-banner .site-title h3{
+    font-size: 1.5rem;    
+}
+.site-main .site-banner .banner-image>img{
+    padding: 7rem 0rem 7rem 10rem;
+    
+}
+.title-text{
+    font: normal bold 50px/72px;
+}
+#b1:hover{
+    background-color: var(--pcolor);
+    color: blanchedalmond;
+}
+#here{
+    float: right;
+    position: relative;
+}
