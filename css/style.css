@@ -4,14 +4,22 @@
 /*===========navbar start======*/
 @import url(./font.css);
 @import url(./partials/_variables.css);
-
+@import url(./partials/_global.css);
 
 
 .header_area .main_menu .navbar .navbar-brand{
     padding: 0 2rem 0 5rem;
     
 }
-
+body{
+    padding-bottom: 10rem;
+}
+/*
+body{
+    background-color: rgb(53, 49, 49);
+    color: whitesmoke;
+}
+*/
 .header_area .main_menu .navbar {
     padding: 1rem 16rem;
     }
@@ -64,14 +72,66 @@ header{
     padding: 7rem 0rem 7rem 10rem;
     
 }
-.title-text{
-    font: normal bold 50px/72px;
-}
-#b1:hover{
-    background-color: var(--pcolor);
-    color: blanchedalmond;
-}
+
+
 #here{
     float: right;
     position: relative;
+}
+.title-text{
+    font: normal bold 50px/72px;
+}
+
+.text-uppercase{
+    text-transform: capitalize;
+}
+
+/*start about area*/
+
+.site-main .about-area{
+    padding: 8rem 5rem;
+
+}
+.site-main .about-area .about-title h2>span{
+    display: block;
+    font: normal bold 49px/60px var(--os);
+    letter-spacing: 10px;
+}
+.site-main .about-area .about-title .paragraph>p{
+    padding: 2rem 0;
+}
+.site-main .about-area .img-fluid{
+    float: right;
+    padding-right:5rem;
+    padding-top: 3rem;
+    position: relative;
+
+}
+
+/*services area*/
+.site-main .services-area{
+    padding: 7rem 2rem;
+}
+
+.site-main .services-area .services-title{
+    padding: 7rem 0rem ;
+    font-family: var(--os);
+    font-weight: bold;
+}
+.site-main .services-area .services-title h1{
+    font-size: 45px;
+}
+.site-main .services-area .services{
+    background: rgba(241, 234, 235, 0.808);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem 0.5rem;
+    transition: box-shadow 0.7s ease;
+    border-radius: 4px;
+    border: lightgrey;
+}
+
+.site-main .services-area .services:hover{
+    box-shadow: grey;
+    border: lightgrey;
 }
