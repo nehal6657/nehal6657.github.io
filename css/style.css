@@ -3,58 +3,75 @@
 
 /*===========navbar start======*/
 @import url(./font.css);
-@import url(./partials/_variables.css);
-@import url(./partials/_global.css);
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
 
+}
+.main-wrapper{
+
+}
+.navbar_fixed{
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    left: 0;right: 0;
+    background-color: #000000;
+    background-image: linear-gradient(213deg, #797979 0%, #110d0d 9%);
+    box-shadow: slategrey;
+    z-index: 999;
+    transition: background 1s ease;
+    color: gray;}
 
 .header_area .main_menu .navbar .navbar-brand{
     padding: 0 2rem 0 5rem;
     
 }
-body{
-    padding-bottom: 10rem;
-}
-/*
-body{
-    background-color: rgb(53, 49, 49);
-    color: whitesmoke;
-}
-*/
+
 .header_area .main_menu .navbar {
     padding: 1rem 16rem;
     }
 
 header{
-    color:black;
-    background-color:  rgb(221, 25, 84);
+    background-color: #000000;
+    background-image: linear-gradient(213deg, #000000 0%, #434343 74%);
+    color: grey;
 }
 
 .header_area .main_menu .nav-item .nav-link{
-    /* smae thing in just one line
-    font: normal 500 15px/2px var(--os);*/
+   
     font-family: "OpenSans", cursive; 
     text-transform: uppercase;
     font-weight: 500;
     padding: 1.7rem;
-    color: black;
+    color: grey;
 }
 
 .header_area .main_menu .navbar-nav .active a{
-    background:  linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(52,197,183,1) 18%, rgba(253,242,45,1) 100%);
+    background:  rgba(0, 0, 0, 0.247);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    color: grey;
     background-clip: text;
 }
+.header_area .main_menu .nav-item :hover{
+    color: whitesmoke;
+}
+
 .header_area .main_menu .navbar-nav a:hover{
-    background:  linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(52,197,183,1) 18%, rgba(253,242,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    
+    color: whitesmoke;
 }
 
 /*=============navbar end============*/
 
 /*banner area*/
+.site-main .main-wrapper{
+    color: grey;
+    background-image: radial-gradient(circle, #717171, #6c6c6d, #65686a, #5f6365, #585f60, #4f5557, #464c4e, #3d4345, #303335, #232325, #161516, #000000);}
+
 .site-main .site-banner .site-title h3{
     padding-top: 35%;
     font-weight: 500;
@@ -77,9 +94,12 @@ header{
 #here{
     float: right;
     position: relative;
+    font-size: 32px;
 }
 .title-text{
-    font: normal bold 50px/72px;
+    
+    font: normal bold 60px/72px "OpenSans", cursive;
+
 }
 
 .text-uppercase{
@@ -94,8 +114,9 @@ header{
 }
 .site-main .about-area .about-title h2>span{
     display: block;
-    font: normal bold 49px/60px var(--os);
+    font: normal bold 49px/60px "OpenSans", cursive;
     letter-spacing: 10px;
+    color: darkgrey;
 }
 .site-main .about-area .about-title .paragraph>p{
     padding: 2rem 0;
@@ -115,23 +136,106 @@ header{
 
 .site-main .services-area .services-title{
     padding: 7rem 0rem ;
-    font-family: var(--os);
+    font-family: "OpenSans", cursive;
     font-weight: bold;
 }
 .site-main .services-area .services-title h1{
     font-size: 45px;
 }
 .site-main .services-area .services{
-    background: rgba(241, 234, 235, 0.808);
+    background:rgb(80, 80, 80);
     padding: 2rem 0;
     width: 16rem;
     margin: 5rem 0.5rem;
     transition: box-shadow 0.7s ease;
-    border-radius: 4px;
+    border-radius: 8px;
     border: lightgrey;
+   color: darkgrey;
 }
 
 .site-main .services-area .services:hover{
     box-shadow: grey;
     border: lightgrey;
+}
+
+
+
+.title-text{
+    font: normal bold 50px/72px;
+}
+
+.text-uppercase{
+    text-transform: capitalize;
+}
+
+.button{
+    padding: 0.8rem 2.2rem;
+    font: normal 500 16px/20px "OpenSans", cursive;
+    position: relative;
+    border: 3px solid rgb(177, 15, 83);
+    border-radius: 4px;
+}
+.button.primary-button{
+    background-color: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(52,197,183,1) 18%, rgba(253,242,45,1) 100%);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition:background 0.6s ease;
+    box-shadow:  rgb(113, 114, 114);
+}
+
+.button.primary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
+.button.primary-button::after, .button.primary-button::after{
+    position: absolute;
+    top: -2px;left: -2px;
+    bottom: -2px;right: -2px;
+    background:  rgb(221, 25, 84);
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.button.secondary-button{
+    background: white;
+    background-clip: padding-box;
+    transition: background 0.6s ease;
+
+}
+.button.button.secondary-button:hover{
+    background:  rgb(221, 25, 84);
+    color: white;
+    box-shadow: rgb(113, 114, 114));
+}
+
+p.para{
+    color: black;
+    font: normal 500 16px/25px;
+
+}
+
+#res{
+    size: 35px;
+}
+.img1{
+    height: 150px;
+    padding: 2rem 3rem;
+}
+footer.footer-area{
+    padding: 2.2rem 1rem;
+    padding-left: 7rem;
+    
+    background-color: #000000;
+    background-image: linear-gradient(213deg, #000000 0%, #434343 74%);
+    color: darkgrey;
+}
+footer.footer-are .social h5{
+    font: normal 500 23px/32px "OpenSans", cursive;
+
+} 
+.img1:hover{
+    color: darkslategrey;
+
 }
