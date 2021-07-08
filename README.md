@@ -1,2 +1,2 @@
-# nehal.github.io
-[![Nehal's GitHub stats](https://github-readme-stats.vercel.app/api?username=nehal6657)](https://github.com/nehal6657/github-readme-stats)
+# Nehal Reshu
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=nehal6657&show_icons=true&hide_border=true&&count_private=true&include_all_commits=true" />
